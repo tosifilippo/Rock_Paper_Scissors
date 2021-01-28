@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <script>
+
+     function computerPlay() {
+         let randomValue = Math.floor(Math.random() * 3);
+         if (randomValue === 0) {
+             return "carta"
+         } else if (randomValue === 1) {
+             return "sasso"
+         } else {
+             return "forbici"
+         }
+     }
+
+     let computerSelection = computerPlay();
+     let playerSelection = prompt("Sasso, carta o forbici?", " ").toLowerCase()
+
+     function playRound() {
+        
+        if (playerSelection == computerSelection) {
+            return "Pari! Prova ancora."
+        } else if ((playerSelection == "sasso") && (computerSelection == "forbici")) {
+            return "Hai vinto! Sasso batte forbici."
+        } else if ((playerSelection == "sasso") && (computerSelection == "carta")) {
+            return "Hai perso! Carta batte sasso."
+        } else if ((playerSelection == "forbici") && (computerSelection == "carta")) {
+            return "Hai vinto! Forbici batte carta."
+        } else if ((playerSelection == "forbici") && (computerSelection == "sasso")) {
+            return "Hai perso! Sasso batte forbici."
+        } else if ((playerSelection == "carta") && (computerSelection == "sasso")) {
+            return "Hai vinto! Carta batte sasso."
+        } else if ((playerSelection == "carta") && (computerSelection == "forbici")) {
+            return "Hai perso! Forbice batte carta."
+        } else {
+            return "Giocata non valida! Non barare."
+        }
+     }
+
+    </script>
+</body>
+</html>
