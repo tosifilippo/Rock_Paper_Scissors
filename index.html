@@ -22,6 +22,7 @@
 					}
 
 					function game() {
+	
 						for (let y=1; y < 6; y++) {
 						const playerSelection = prompt("Sasso, carta o forbici?", " ").toLowerCase();
 						const computerSelection = computerPlay();
@@ -30,6 +31,14 @@
 						console.log(computerScore)
 						}
 
+						if (playerScore > computerScore) {
+								return "Hai vinto!" 
+						} else if (playerScore < computerScore) {
+								return "Hai perso!"
+						} else {
+							 return "Pari!"
+						}
+						
 					function playRound(playerSelection, computerSelection) {
 						if (playerSelection == computerSelection) {
 								// return "Pari! Prova ancora."
