@@ -1,3 +1,9 @@
+h1 {
+    font-size: 70px;
+    text-align: center;
+    margin: 2%;
+}
+
 #btn-container {
     display: flex;
     justify-content: space-evenly;
@@ -22,18 +28,25 @@ button:hover {
     display: flex;
     justify-content: space-evenly;
     font-size: xx-large;  
-    margin: 10%;
+    margin: 5%;
 }
 
 #results-container {
     display: flex;
     font-size: xx-large;
     justify-content: space-evenly;
-    margin: 10%;
+    margin: 5%;
 }
 
 #end-desc {
     display: flex;
     font-size: xx-large;
     justify-content: space-evenly;
+}
+
+.hidden {
+    display: none;
+}
+.show {
+   display: inline;
 }

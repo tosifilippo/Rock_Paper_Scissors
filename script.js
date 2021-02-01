@@ -1,6 +1,6 @@
-let playerScore=0
-let computerScore=0
-let computerSelection 
+let playerScore=0;
+let computerScore=0;
+let computerSelection; 
 let playerSelection;
 
 let buttons = document.querySelectorAll("button");
@@ -14,7 +14,7 @@ buttons.forEach((button) => {
 
 		playRound(playerSelection, computerSelection);
 		if (playerScore === 5 || computerScore === 5) {
-			declareWinner() , rock.setAttribute('disabled', '') , paper.setAttribute('disabled', '') , scissors.setAttribute('disabled', '');
+			declareWinner() , showRefresh() , sasso.setAttribute('disabled', '') , carta.setAttribute('disabled', '') , forbici.setAttribute('disabled', '');
     }
 		
 	});
@@ -72,11 +72,14 @@ function declareWinner() {
 
 function keepPlayerScore() {
   let playerScoreBox = document.querySelector("#player-score");
-  playerScoreBox.textContent = playerScore;
+  playerScoreBox.textContent = "Il tuo punteggio: " + playerScore;
 }
 
 function keepCpuScore() {
 	let computerScoreBox = document.querySelector("#computer-score");
-	computerScoreBox.textContent = computerScore;
+	computerScoreBox.textContent = "Il punteggio del computer: " + computerScore;
 }
 
+function showRefresh() {
+	document.getElementById("refresh-btn").className = 'show';
+}
