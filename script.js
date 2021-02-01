@@ -15,7 +15,7 @@ function computerPlay() {
 function game() {
 
 	for (let y=1; y < 6; y++) {
-	const playerSelection = prompt("Sasso, carta o forbici?", " ").toLowerCase();
+	const playerSelection = document.getElementsByClassName("buttons").value;
 	const computerSelection = computerPlay();
 	console.log(playRound(playerSelection, computerSelection));
 	console.log(playerScore);
