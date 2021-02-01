@@ -1,0 +1,38 @@
+
+#btn-container {
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+img {
+    width: 40%;
+    padding: 40%;
+}
+
+#score-container {
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.score {
+    padding: 16%;
+    font-size:xx-large;  
+}
+
+#results-container {
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: xx-large;
+    text-align: center;
+}
+
+#end-desc {
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: xx-large;
+    text-align: center;
+}
