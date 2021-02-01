@@ -1,38 +1,29 @@
-
 #btn-container {
     display: flex;
-    margin-left: 25%;
-    margin-right: 25%;
+    justify-content: space-evenly;
+    margin: 5%;
 }
 
 img {
     width: 40%;
-    padding: 40%;
 }
 
 #score-container {
     display: flex;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.score {
-    padding: 16%;
+    justify-content: space-evenly;
     font-size:xx-large;  
+    margin: 10%;
 }
 
 #results-container {
     display: flex;
-    margin-left: 25%;
-    margin-right: 25%;
     font-size: xx-large;
-    text-align: center;
+    justify-content: space-evenly;
+    margin: 10%;
 }
 
 #end-desc {
     display: flex;
-    margin-left: 25%;
-    margin-right: 25%;
     font-size: xx-large;
-    text-align: center;
+    justify-content: space-evenly;
 }
