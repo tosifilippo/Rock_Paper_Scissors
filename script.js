@@ -3,7 +3,7 @@ let computerScore=0
 let computerSelection 
 let playerSelection;
 
-let buttons = document.querySelectorAll(".button");
+let buttons = document.querySelectorAll("button");
 const endDesc = document.querySelector("#end-desc");
 const container = document.querySelector("#results-container");
 
@@ -14,7 +14,7 @@ buttons.forEach((button) => {
 
 		playRound(playerSelection, computerSelection);
 		if (playerScore === 5 || computerScore === 5) {
-      declareWinner();
+			declareWinner() , rock.setAttribute('disabled', '') , paper.setAttribute('disabled', '') , scissors.setAttribute('disabled', '');
     }
 		
 	});
@@ -79,3 +79,4 @@ function keepCpuScore() {
 	let computerScoreBox = document.querySelector("#computer-score");
 	computerScoreBox.textContent = computerScore;
 }
+
