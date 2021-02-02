@@ -15,10 +15,11 @@ buttons.forEach((button) => {
 		playRound(playerSelection, computerSelection);
 		if (playerScore === 5 || computerScore === 5) {
 			declareWinner() , showRefresh() , sasso.setAttribute('disabled', '') , carta.setAttribute('disabled', '') , forbici.setAttribute('disabled', '');
-    }
+   }
 		
 	});
 });
+
 
 const myArray = ["Sasso", "Carta", "Forbici"];
 
@@ -39,18 +40,59 @@ function playRound(playerSelection, computerSelection) {
     (computerSelection == "carta" && playerSelection == "sasso")
   ) {
     computerScore = ++computerScore;
-		keepCpuScore();
-		displayResults(
-			`Oh no! Hai perso.
-			${capitalize(computerSelection)} batte ${playerSelection}.`
-		);
+				keepCpuScore();
+				if (computerScore === 1) {
+					displayResults(
+						`Oh no! Hai perso.
+						${capitalize(computerSelection)} batte ${playerSelection}.`
+					);
+				} else if (computerScore === 2) {
+					displayResults(
+						`Argh! 
+						${capitalize(computerSelection)} batte ${playerSelection}.
+						Prova di nuovo!`
+					);
+				} else if (computerScore === 3) {
+					displayResults(
+						`${capitalize(computerSelection)} batte ${playerSelection}.
+						Ce la puoi ancora fare!`
+					);
+				} else if (computerScore === 4) {
+					displayResults(
+						`Ahia! Match Point. 
+						${capitalize(computerSelection)} batte ${playerSelection}.
+						Non mollare!`
+					);
+				} else {
+					displayResults (`${capitalize(computerSelection)} batte ${playerSelection}.`);
+				}
 	} else {
     playerScore = ++playerScore;
-    keepPlayerScore();
-		displayResults(
-			`Evvai!!! Hai vinto.
-			${capitalize(playerSelection)} batte ${computerSelection}.`
-		);
+				keepPlayerScore();
+				if (playerScore == 1) {
+					displayResults(
+					`Evvai!!! Hai vinto.
+					${capitalize(playerSelection)} batte ${computerSelection}.`
+				);
+			} else if (playerScore === 2) {
+				displayResults(
+					`Mica male! 
+					${capitalize(computerSelection)} batte ${playerSelection}.`
+				);
+			} else if (playerScore === 3) {
+				displayResults(
+					`${capitalize(computerSelection)} batte ${playerSelection}.
+					Si vede che ti sei allenato..`
+				);
+			} else if (playerScore === 4) {
+				displayResults(
+					`Match Point!. 
+					${capitalize(computerSelection)} batte ${playerSelection}.
+					Ancora un punto per vincere!`
+				);
+			} else {
+				displayResults (`${capitalize(computerSelection)} batte ${playerSelection}.`);
+			}
 	}
 }
 

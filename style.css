@@ -1,17 +1,37 @@
+html {
+    height: 100%;
+    background-image: radial-gradient(circle, #30c4e3, #20cee7, #0fd8ea, #04e1eb, #12ebeb);
+  }
+
+body {
+    position:absolute; top:0; bottom:0; right:0; left:0;
+    color: ivory;
+}
+
 h1 {
     font-size: 70px;
     text-align: center;
     margin: 2%;
 }
 
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
 #btn-container {
     display: flex;
     justify-content: space-evenly;
-    margin: 5%;
+    margin: 3%;
+    margin-left: 16%;
+    margin-right: 16%;
+}
+
+img {
+    width: 45%;
 }
 
 .buttons {
-    width: fit-content;
     background-color: white;
     border-radius: 15px;
 }
@@ -21,21 +41,21 @@ h1 {
 }
 
 .buttons:hover {
-    box-shadow: 0 5px 60px burlywood;
+    box-shadow: 10px 13px 14px 6px rgba(255,255,255,0.71);
 }
 
 #score-container {
     display: flex;
     justify-content: space-evenly;
     font-size: xx-large;  
-    margin: 5%;
+    margin: 3%;
 }
 
 #results-container {
     display: flex;
     font-size: xx-large;
     justify-content: space-evenly;
-    margin: 5%;
+    margin: 3%;
 }
 
 #end-desc {
@@ -52,6 +72,7 @@ h1 {
    display: inline;
    width: 10%;
    font-size: x-large;
+   margin: 2%;
 }
 
 #refresh-btn-container {
