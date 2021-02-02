@@ -10,17 +10,17 @@ h1 {
     margin: 5%;
 }
 
-button {
+.buttons {
     width: fit-content;
     background-color: white;
     border-radius: 15px;
 }
 
-button:focus {
+.buttons:focus {
     outline: none;
 }
 
-button:hover {
+.buttons:hover {
     box-shadow: 0 5px 60px burlywood;
 }
 
@@ -47,6 +47,15 @@ button:hover {
 .hidden {
     display: none;
 }
+
 .show {
    display: inline;
+   width: 10%;
+   font-size: x-large;
+}
+
+#refresh-btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
 }

@@ -8,13 +8,13 @@
 <body>
 	<h1>Sasso, carta o forbici?</h1>
 	<div id="btn-container">
-		<button id="sasso">
+		<button class="buttons" id="sasso">
 			<img src="sasso.png" alt="Sasso" />
 		</button>
-		<button id="carta">
+		<button class="buttons" id="carta">
 			<img src="carta.png" alt="Carta" />
 		</button>
-		<button id="forbici">
+		<button class="buttons" id="forbici">
 			<img src="forbici.png" alt="Forbici" />
 		</button>
 	</div>
@@ -24,7 +24,9 @@
 	</div>
 	<div id="results-container"></div>
 	<div id="end-desc"></div>
-	<button id="refresh-btn" class="hidden" onClick="window.location.reload();">Gioca di nuovo</button>
+	<div id="refresh-btn-container">
+		<button id="refresh-btn" class="hidden" onClick="window.location.reload();">Gioca di nuovo</button>
+	</div>
 </body>
 <script src="script.js"></script>
 </html>
