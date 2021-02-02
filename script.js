@@ -59,9 +59,9 @@ function playRound(playerSelection, computerSelection) {
 					);
 				} else if (computerScore === 4) {
 					displayResults(
-						`Ahia! Match Point. 
+						`Ahia! 
 						${capitalize(computerSelection)} batte ${playerSelection}.
-						Non mollare!`
+						Non mollare ora!`
 					);
 				} else {
 					displayResults (`${capitalize(computerSelection)} batte ${playerSelection}.`);
@@ -86,9 +86,9 @@ function playRound(playerSelection, computerSelection) {
 				);
 			} else if (playerScore === 4) {
 				displayResults(
-					`Match Point!. 
+					`Forza!. 
 					${capitalize(computerSelection)} batte ${playerSelection}.
-					Ancora un punto per vincere!`
+					Solo un punto per vincere!`
 				);
 			} else {
 				displayResults (`${capitalize(computerSelection)} batte ${playerSelection}.`);
